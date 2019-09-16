@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/aX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/accelerometerZ"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/acceleromaterY"
+        app:layout_constraintTop_toBottomOf="@+id/accelerometerZ" />
+
+    <TextView
+        android:id="@+id/gZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/gyroscopeZ"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/gyroscopeX"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/nSteps"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscopeZ" />
+
+    <TextView
+        android:id="@+id/aZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/accelerometerX"
+        app:layout_constraintTop_toBottomOf="@+id/acceleromaterY" />
+
+    <TextView
+        android:id="@+id/gY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="0.0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gyroscopeZ"
+        app:layout_constraintStart_toEndOf="@+id/gyroscopeY"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscopeX"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF9800"
+        android:text="@string/start"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/endButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nSteps" />
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:background="#E91E63"
+        android:text="@string/stop"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/startButton" />
+
+    <TextView
+        android:id="@+id/accelerometerZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="50dp"
+        android:text="Accelerometer X:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accelerometerX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:text="Accelerometer  Z:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceleromaterY" />
+
+    <TextView
+        android:id="@+id/nSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="8dp"
+        android:text="Steps :"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscopeZ" />
+
+    <TextView
+        android:id="@+id/gyroscopeZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="300dp"
+        android:text="Gyroscope Z:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gyroscopeX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="212dp"
+        android:text="Gyroscope X:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/acceleromaterY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="Accelerometer Y:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accelerometerZ" />
+
+    <TextView
+        android:id="@+id/gyroscopeY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Gyroscope Y:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gyroscopeZ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscopeX"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
